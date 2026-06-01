@@ -3,8 +3,8 @@ namespace SpriteKind {
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`niveau2`)
-    game.showLongText("0 floor", DialogLayout.Bottom)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorDarkDiamond)
+    game.showLongText("0 floor", DialogLayout.Bottom)
     mySprite2 = sprites.create(img`
         d d b b b b b b b b b b b b d d 
         d b e 4 4 4 4 4 4 4 4 4 4 e b d 
@@ -336,8 +336,8 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (sprite, location) {
     tiles.setCurrentTilemap(tilemap`niveau3`)
-    game.showLongText("-1 floor", DialogLayout.Bottom)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile7`)
+    game.showLongText("-1 floor", DialogLayout.Bottom)
 })
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
@@ -345,6 +345,7 @@ game.showLongText("tu recois une mysterieuse lettre...", DialogLayout.Bottom)
 game.showLongText("don't come to the castle...", DialogLayout.Full)
 game.showLongText("c'est etrange...", DialogLayout.Bottom)
 game.showLongText("j'y vais !", DialogLayout.Bottom)
+game.showLongText("castle garden", DialogLayout.Bottom)
 mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
@@ -365,7 +366,6 @@ mySprite = sprites.create(img`
     `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 scene.cameraFollowSprite(mySprite)
-game.showLongText("castle garden", DialogLayout.Bottom)
 tiles.setCurrentTilemap(tilemap`niveau1`)
 tiles.placeOnRandomTile(mySprite, sprites.castle.tileGrass1)
 mySprite2 = sprites.create(img`
