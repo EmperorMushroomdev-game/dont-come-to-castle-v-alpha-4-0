@@ -2,6 +2,7 @@ namespace SpriteKind {
     export const coffre = SpriteKind.create()
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, location) {
+    sprites.destroy(mySprite2)
     tiles.setCurrentTilemap(tilemap`niveau2`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorDarkDiamond)
     game.showLongText("0 floor", DialogLayout.Bottom)
