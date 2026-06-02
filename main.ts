@@ -1,12 +1,7 @@
 namespace SpriteKind {
     export const coffre = SpriteKind.create()
 }
-scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.floorLightMoss, function (sprite, location) {
-    tiles.setCurrentTilemap(tilemap`niveau4`)
-    tiles.placeOnRandomTile(mySprite, sprites.dungeon.collectibleInsignia)
-})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile`, function (sprite, location) {
-    sprites.destroy(mySprite2)
     tiles.setCurrentTilemap(tilemap`niveau2`)
     tiles.placeOnRandomTile(mySprite, sprites.dungeon.floorDarkDiamond)
     game.showLongText("0 floor", DialogLayout.Bottom)
@@ -340,7 +335,6 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (sprite, location) {
-    sprites.destroy(mySprite2)
     tiles.setCurrentTilemap(tilemap`niveau3`)
     tiles.placeOnRandomTile(mySprite, assets.tile`myTile7`)
     game.showLongText("-1 floor", DialogLayout.Bottom)
