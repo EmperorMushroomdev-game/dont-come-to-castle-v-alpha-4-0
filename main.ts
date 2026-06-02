@@ -364,8 +364,8 @@ mySprite = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-scene.cameraFollowSprite(mySprite)
 controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
 tiles.setCurrentTilemap(tilemap`niveau1`)
 tiles.placeOnRandomTile(mySprite, sprites.castle.tileGrass1)
 mySprite2 = sprites.create(img`
