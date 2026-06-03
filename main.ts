@@ -342,7 +342,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.stairSouth, function (spr
 })
 let mySprite2: Sprite = null
 let mySprite: Sprite = null
-game.showLongText("tu recois une mysterieuse lettre...", DialogLayout.Bottom)
+game.showLongText("99", DialogLayout.Bottom)
 game.showLongText("don't come to the castle...", DialogLayout.Full)
 game.showLongText("c'est etrange...", DialogLayout.Bottom)
 game.showLongText("j'y vais !", DialogLayout.Bottom)
